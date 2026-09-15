@@ -1,0 +1,73 @@
+ <!-- Types of CSS
+Inline CSS -> It is used to style a specific HTML element
+Internal CSS -> It has <style> tage in the <head> section
+External CSS -> We link web pages to the xternal .css file  -->
+
+
+ <!-- CSS Selectors 
+Class(.) -> the id selector selects the id attribute of an html tags
+ID(#) -> the class selector selects html element with a specific class attribute
+tag NAme -> select the html tags by name -->
+
+<!-- INTERNAL CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/CSS">
+       .main{
+        width: 600px;
+        height: 100px;
+        background-color: blue;
+       }
+       .row1{
+        width: 600px;
+        height: 50px;
+        background-color: yellowgreen;
+       }
+       .row1c1{
+        width: 300px;
+        height: 50px;
+        float: left;
+        background-color: aqua;
+       }
+       .row1c2{
+        width: 300px;
+        height: 50px;
+        float: left;
+        background-color: rgb(222, 118, 13);
+       }
+       .row2{
+        width: 600px;
+        height: 50px;
+        background-color: rgb(225, 16, 162);
+       }
+       .row2c1{
+        width: 200px;
+        height: 50px;
+        float: left;
+        background-color: rgb(56, 8, 129);
+       }
+        .row2c2{
+        width: 400px;
+        height: 50px;
+        float: left;
+        background-color: rgb(228, 33, 140);
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="row1">
+            <div class="row1c1">Home</div>
+            <div class="row1c2">About</div>
+        </div>
+        <div class="row2">
+             <div class="row2c1">Course</div>
+             <div class="row2c2">Course</div>
+        </div>    
+    </div>
+</body>
+</html>

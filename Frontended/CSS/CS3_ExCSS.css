@@ -1,0 +1,58 @@
+.main{
+    width: 1000px;
+    height: 540px;
+    font-size: 10px;
+    background-color: darkorange;
+    font-family: Arial;
+}
+/* 1em= 16px by default  */
+.row1{
+    width: 1000px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 2em;
+    background-color: darkmagenta;
+    text-transform: capitalize;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+}
+.row2{
+    width:1000px ;
+    height: 40px;
+    
+    background-color: palevioletred ;
+}
+.row2c1{
+    width:200px ;
+    height: 40px;
+    float: left;
+    background-color: palevioletred ;
+}
+.row3{
+    width:1000px ;
+    height: 200px;
+    background-color: rgb(4, 50, 51);
+}
+.row3left{
+    width:250px ;
+    height: 200px;
+    float: left;
+    background-color: pink;
+}
+.row3leftr{
+    width:250px ;
+    height: 40px;
+    
+    background-color: pink;
+}
+
+.row3right{
+    width:750px ;
+    height: 200px;
+    float: left;
+    background-color: burlywood;
+}

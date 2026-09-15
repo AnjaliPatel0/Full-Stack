@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTLM 5</title>
+</head>
+<body>
+    <fieldset>
+        <legend>HTML 5 Form Input</legend>
+        <form>
+           <input type="text" list="course"/>
+          <datalist id="course">
+            <option value="PHP"/>
+            <option value="Java"/>
+            <option value="C"/>
+            <option value="C++"/>
+          </datalist>
+           <br/>  
+          Name <br/>
+          <input type="text" required minlength="5" maxlength="15"/><br/>
+          <br/>  
+          QTY <br/>
+          <input type="number" min="1" max="10"/> <br/>
+          <br/>
+          Date <br/>
+          <input type="date"/><br/>
+          <br/>
+          Time <br/>
+          <input type="time"/><br/>
+          <br/>
+          Week <br/>
+          <input type="week"/><br/>
+          <br/>
+          Month <br/>
+          <input type="month"/><br/>
+          <br/>
+          color <br/>
+          <input type="col"/><br/>
+          <br/>
+          URL <br/>
+          <input type="url"/><br/>
+          <br/>
+          Range <br/>
+          <input type="range"/><br/>
+          <br/>
+         
+          <button>Save</button>
+          <input type="reset" value="Reset"/>
+          <button type="reset">Reset</button>
+
+          <button type="button">Save</button>
+        </form>
+    </fieldset>
+</body>
+</html>

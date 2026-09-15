@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+         <legend>Enquiry Form</legend>
+     <form method="" action="">
+        <label>Gender</label><br/>
+        <input type="radio" value="male" name="gender"/>Male
+        <input type="radio" value="Female" name="gender"/>Female
+        <br/>
+        
+        
+        <label>Name</label><br/>
+        <input type="text" pattern="[a-zA-Z ]{3,40}" placeholder="Enter your Name" name="uname"/>
+        <br>
+
+        <label>Course</label><br/>
+        <input type="checkbox" value="php"/> PHP
+        <input type="checkbox" value="java"/> JAVA
+        <input type="checkbox" value="c"/> C
+        <input type="checkbox" value="c++"/> C++
+        <br/>
+
+        <label>Email</label><br/>
+        <input type="email" placeholder="Enter your Email" name="uemail" /><br/>
+       
+        <label>Phone</label><br/>
+        <input type="tel" pattern="[0-9]{10}" title="Enter
+          the valid phone number with 10 digits" placeholder="Enter your Phone" name="uphone" /><br/>
+        
+        <label>Message</label><br/>  
+        <textarea></textarea><br/>
+
+        <label>Photo</label><br/>
+        <input type="file"/><br/>
+
+        <label>Password</label><br/>
+        <input type="password"/><br/>
+
+        <label>Country</label><br/>
+        <select>
+            <option>---------Select Country--------</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Africa">Africa</option>
+            <option value="Europe">Europe</option>
+        </select><br/>
+
+        <label>Course</label>
+        <select>
+            <optgroup label="Frontend">
+                  <option>HTML</option>
+                  <option>CSS</option>
+                  <option>JS</option>
+            </optgroup>
+            <optgroup label="Backend">
+                  <option>PHP</option>
+                  <option>NODE</option>
+                  <option>MYSQL</option>
+            </optgroup>
+        </select>
+        <button type="submit">Save</button>
+        <input type="submit" value="Go"/>
+    </form>
+   </fieldset> 
+</body>
+</html>

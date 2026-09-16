@@ -1,0 +1,52 @@
+ /* p{
+        font-size: 30px;
+       } */
+       
+       p{
+        color: rgb(166, 166, 227);
+       }
+       .main p{
+        font-size: 40px;
+        color: brown;
+       }
+       /* .main p:first-child{
+        color: aqua;
+       }
+        .main p:last-child{
+        color: rgb(7, 69, 69);
+       } */
+
+        .main p:nth-child(1){
+            color: chocolate;
+        }
+        .main p:nth-child(2){
+            color: rgb(237, 146, 82);
+        }
+        .mainInner{
+            width:1170px;
+            background: blue;
+            margin: auto;
+        }
+        .hoverBox{
+            width: 300px;
+            height: 300px;
+            background: rebeccapurple;
+            transition: 2s;
+        }
+         .hoverBox:hover{
+            background: gold;
+            color: white;
+         }
+         .hoverBox h2{
+             font-family: "Inter", sans-serif;
+             font-weight: 400;
+         }
+
+         .slink i{
+            color: rgb(42, 8, 163);
+            font-size: 30px;
+            transition: 2s;
+         }
+         .slink i:hover{
+            color: rgb(159, 8, 8);
+         }

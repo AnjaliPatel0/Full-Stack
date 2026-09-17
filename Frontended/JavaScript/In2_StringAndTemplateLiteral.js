@@ -33,3 +33,12 @@ console.log(uid==cid)
 let bigInt=8888888888888n;
 console.log(bigInt,typeof bigInt)
 
+// Object -> Array
+let users=["ravi","ram",20,10]
+console.log(users,typeof users)
+
+let obj={
+    cName:"ram",
+    courseName:"JS"
+}
+console.log(obj,typeof obj)

@@ -43,7 +43,7 @@ let x=55;
 console.log(x>=48 && x<70)
 
 let y=60;
-console.log(m!="" || m>60)
+console.log(y!="" || y>60)
 
 let sub1=90;
 let sub2=85;
@@ -57,3 +57,13 @@ console.log("Ternary Operator")
 let num1=10;
 let output=(num1%2==0) ? "Even Number" : "Odd Number";
 console.log(output)
+
+// String Operator 
+console.log("String Operator")
+let a=10;
+let b=20;
+let c="Ws"
+let d="IIp"
+console.log(a+b)
+console.log(a+"hello")
+console.log(c+d+a+b)

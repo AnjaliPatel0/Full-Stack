@@ -1,0 +1,61 @@
+<!-- Looping Statement -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Statement</title>
+</head>
+<body>
+    
+</body>
+<script>
+    for(let start=1;start<=10;start++){
+        console.log(start,"Welcome to WS")
+    }
+
+    // print table
+    for(let i=1;i<=10;i++){
+      console.log("2*",i,"=",i*2)
+    }
+
+    // Break 
+    for(let n=10;n>=1;n--){
+       if(n==6){
+        break;
+       }
+        console.log(n)
+    }
+    
+    //  Continue
+    for(let m=1;m<=50;m++){
+        if(m%5==0){
+            continue;
+        }
+        console.log(m)
+    }
+
+    // Nested for loop
+    for(let row=1;row<=5;row++){
+      for(let r=1;r<=5;r++){
+        document.write("*")
+     }
+     document.write("<br/>")
+    }
+
+    for(let row=1;row<=5;row++){
+      for(let r=1;r<=row;r++){
+        document.write("*")
+     }
+     document.write("<br/>")
+    }
+
+    for(let row=1;row<=5;row++){
+      for(let r=5;r<=row;r--){
+        document.write("*")
+     }
+     document.write("<br/>")
+    }
+</script>
+</html>

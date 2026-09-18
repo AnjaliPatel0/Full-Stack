@@ -1,0 +1,51 @@
+<!-- Switch case -->
+
+<!-- Example 1 -> test the function with different inputs
+ red -> Output: stop! the light is red.
+ yellow -> Output: get ready to stop! the light is about to turn red
+ green -> Output: Go! the light is green
+ blue -> Output: Invalid input. please enter 'red,yellow' or green -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let ch=Number(prompt("Enter the value"))
+    switch (ch) {
+        case 1:
+            console.log("Red")
+            break;
+        case 2:
+            console.log("Yellow")
+            break;
+        case 3:
+            console.log("Green")
+            break;    
+        default:
+            console.log("Invalid")
+            break;
+    }
+
+    let userCH=prompt("Enter the value")
+    switch(userCH){
+      case 'red':
+        console.log("stop! the light is red.")  
+        break;
+      case 'yellow':
+        console.log("get ready to stop! the light is about to turn red") 
+        break;
+      case 'green': 
+        console.log("Go! the light is green") 
+        break;
+      default:
+        console.log("Invalid input. please enter 'red,yellow' or green")
+        break;       
+    }
+</script>
+</html>

@@ -8,4 +8,65 @@
 <body>
     
 </body>
+<script>
+    function displayName(){
+        console.log("Welcome to Ws")
+    }
+    displayName()
+
+    // parameter use
+    function addData(num1,num2){
+         console.log(num1+num2)
+    }
+    addData(25,45)
+
+    // return type func
+    function addData1(num1,num2){
+         return num1+num2;
+    }
+     let output=addData1(25,25)
+     console.log(output)
+
+    // Arrow Function
+    let Data=(num1,num2)=> num1*num2 ;
+    let Output=Data(25,99)
+    console.log(Output)
+
+
+    // one parameter don't use cicle bracet
+    let Data1=num1=> num1 ;
+    let Output1=Data1(25)
+    console.log(Output1)
+
+
+    // when curly braket is used return type is complusory
+    let Data2=(num1,num2)=>{ 
+        return num1*num2 ;
+    }
+    let Output2=Data2(25,25)
+    console.log(Output2)
+
+
+    // default parameter
+     let Data3=(num1,num2=15)=>{ 
+        return num1+num2 ;
+    }
+    let Output3=Data3(25)
+    console.log(Output3)
+
+    // when this keyword is inside normal func return object 
+    // while in arrow function return window
+    let obj={
+        "cname":"ws",
+        "name":"anjali",
+        cinfo:()=>{
+            console.log(this)
+        },
+        cinfo1:function(){
+            console.log(this.name)
+        }
+    }
+    obj.cinfo()
+    obj.cinfo1()
+</script>
 </html>

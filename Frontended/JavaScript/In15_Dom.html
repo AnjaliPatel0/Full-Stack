@@ -1,0 +1,69 @@
+<!-- Document Object Model -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+ </head>
+ <body>
+    <h1 id="heading">Welcome <u>to</u> WS</h1> 
+    <p id="output"></p>
+    
+    
+    <input type="password" id="pass"/><br/>
+    <!-- <button onclick="showHidePassword()" id="btn" >show</button>-->
+
+     <!-- QuarySelector or QuerySelector All -->
+      Num1 <input type="text" class="input" placeholder="Enter the value1"/>
+      <br/>
+       Num2 <input type="text" class="input" placeholder="Enter the value2"/>
+      <br/>
+      <button>Save</button>
+      output <input type="text" class="input" placeholder="Output"/>
+      <br/>
+</body>
+ <script>
+    // can be access by unique id
+    let heading=document.getElementById('heading')
+    let para=document.getElementById("output")
+     console.log(heading)
+    console.log(heading.innerText) // only access text
+    console.log(heading.innerHTML) // inside tag give
+    para.innerHTML=heading.innerHTML;
+
+
+    // Event when click show or hide password
+    let password=document.getElementById('pass')
+    let btn=document.getElementById('btn')
+    function showHidePassword() {
+        // alert("hello")
+        if(btn.innerHTML=="show"){
+            password.type="text";
+            btn.innerHTML="hide"
+        }
+        else{
+            password.type="password";
+            btn.innerHTML="show"
+        }
+    }
+
+
+    // QuarySelector or QuerySelectorAll
+    // let allInput=document.querySelector(".input")
+    // console.log(allInput)
+
+    let btn1=document.querySelector("button")
+    let allInput=document.querySelectorAll(".input")
+    btn1.addEventListener("click",()=>{
+       //alert("Welcome")
+       let input1Value=Number(allInput[0].value);
+       let input2Value=Number(allInput[1].value);
+       let output=input1Value+input2Value
+       allInput[2].value=output
+       allInput[0].value=''
+       allInput[1].value=''
+    //    console.log(output)
+    })
+ </script>
+ </html>

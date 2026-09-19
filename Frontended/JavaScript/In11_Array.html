@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let l=[10,20,30,40]
+    console.log(l)
+    console.log(l[1])
+
+    let n=Array("hello","ws",10,20,30)
+    console.log(n[0])
+
+    // Multidimensional Array
+    let nm=[10,20,30,40,[88,99,77,66]]
+    console.log(nm[4][1])
+
+    // Iterate array
+    let p=[10,20,30,40]
+    let t=p.length;
+
+    for(let i=0;i<t;i++){
+        console.log(i,p[i])
+    }
+
+    // Reverse the array
+    for(let i=t-1;i>=0;i--){
+        console.log(i,p[i])
+    }
+
+    // put the value in the object
+    let arr=[1,2,3,4,5]
+    for(let v of arr){
+        console.log(v)
+    }
+
+    // access value using index key
+     for(let k in arr){
+        console.log(k,arr[k])
+    }
+</script>
+</html>

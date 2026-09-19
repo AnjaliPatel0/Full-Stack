@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let displayData=(res)=>{
+        return res
+    }
+    
+    let sumData=(num1,num2,result)=>{
+        return result(num1+num2)
+    }
+
+    let output=sumData(20,30,displayData)
+    console.log(output)
+
+
+    // ForEach or anonmus func diplay direct array value
+    let l=[20,30,40,45]
+    l.forEach( (v,i)=>{
+         console.log(v,i)
+    })
+
+    // map func -> don't change in existing array or create new array
+    let l1=[10,20,30,40,45]
+    let finalAns=l.map((v,i)=> v+5)
+    console.log(finalAns)
+
+
+    // filter func
+    let l2=[21,55,10,20,30,40,45]
+    let filterData=l.filter((v,i)=> v%2==0)
+    console.log(filterData)
+
+    // Reduce func
+    let l3=[10,20,30,40,50]
+    // let finalans=l3.reduce((total,v,i)=> total+v)
+    let finalans=l3.reduce((total,v,i)=>{ 
+        return total+v
+
+    },5) //intialise total value here
+    
+    console.log(finalans)
+</script>
+</html>

@@ -27,14 +27,24 @@
 </head>
 <body>
     <div class="container">
-        <div class="main"></div>
-        <div class="main"></div> 
-        <div class="main"></div>
-        <div class="main"></div>
+        <div class="main">1</div>
+        <div class="main">2</div> 
+        <div class="main">3</div>
+        <div class="main">4</div>
     </div>
     <button>Change Color</button>
 </body>
 <script>
-    
+    let btn=document.querySelector("button")
+    let allboxes=document.getElementsByClassName("main")
+    btn.addEventListener("click",function(){
+    //    console.log(allboxes)
+    //    allboxes[0].style.backgroundColor="yellow"
+      for(let items of allboxes){
+        items.style.background="yellow"
+         items.style.fontSize="50px"
+        console.log(items.innerHTML)
+      } 
+   })
 </script>
 </html>

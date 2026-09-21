@@ -1,0 +1,47 @@
+<!-- ClassList Object
+ add(),remove(),toggle() -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+    <style>
+        .activePara{
+            color: chocolate;
+            font-size: 30px;
+            background-color: chartreuse;
+            padding: 20px;
+        }
+    </style>
+ </head>
+ <body>
+    <button id="css">CSS</button>
+    <button id="addClass">Add Class</button>
+    <button>Remove Class</button>
+    <button>Toggle Class</button>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ut unde illo modi facilis tempora nemo 
+        molestias magnam est dolore facere consequuntur ea, earum esse. 
+        Saepe eius vel incidunt blanditiis?
+    </p>
+
+ </body>
+ <script>
+     let btn=document.querySelector("#css")
+     let paraEle=document.querySelector("p")
+     btn.addEventListener("click",()=>{
+        paraEle.style.color="blue"
+        paraEle.style.background="yellow"
+     })
+
+     let btn1=document.querySelector("#addClass")
+     btn1.addEventListener("click",()=>{
+        // alert("hello")
+         paraEle.classList.add('activePara')
+     })
+ </script>
+ </html>

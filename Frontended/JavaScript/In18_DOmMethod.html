@@ -1,0 +1,74 @@
+<!-- WHAT IS DOM?
+ When a web page loads,the browser constructs the document
+ Object Model(DOM) , which represent the page's structure as a 
+ hierarchical tree of elements
+ 
+ * Enables dynamic content updates
+
+ # Selecting Elements in the DOM
+ * document.getElementById("id")
+ * document.getElementByTagName("Tag")
+ * document.getElementByClassName("class")
+ * document.querySelector("selector")
+ * document.querySelectorAll("selector")
+  -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1 id="heading">Welcome to WS</h1>
+    <div id="res"></div>
+
+    <p>Welcome</p>
+    <p>WS</p>
+    <p>IIP</p>
+
+    <p class="para">Welcome</p>
+    <p class="para">WS</p>
+    <p class="para">IIP</p>
+
+    <h2>Welcome to india</h2>
+    <h2 id="heading1">Welcome to MP</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil beatae ipsa quam eos harum 
+        id expedita, natus, vitae praesentium dolorum maiores repellendus dolorem provident iste 
+        velit quibusdam sunt totam hic!
+    </p>
+
+    <h3>America</h3>
+    <h3>Africa</h3>
+    <h3>India</h3>
+  </body>
+  <script>
+    let headingElement=document.getElementById("heading")
+    let resElement=document.getElementById("res")
+    console.log(headingElement.innerHTML)
+    console.log(headingElement.innerText)
+    resElement.innerHTML=headingElement.innerHTML
+
+    let pAllTag=document.getElementsByTagName("p")
+    console.log(pAllTag[1].innerHTML)
+
+    let pAllClass=document.getElementsByClassName("para")
+    console.log(pAllClass[0].innerHTML)
+
+    let headingEle=document.querySelector("h1")
+    console.log(headingEle)
+
+    // using # to access by id
+    let heading1Ele=document.querySelector("#heading1") 
+    console.log(heading1Ele)
+
+    let allHeading=document.querySelectorAll("h3")
+   
+   allHeading.forEach((item,index)=>{
+      console.log(item.innerHTML)
+   })
+    console.log(allHeading)
+  </script>
+  </html>

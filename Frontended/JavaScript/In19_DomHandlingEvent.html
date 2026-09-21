@@ -1,0 +1,48 @@
+<!-- Handling Events in the Dom
+ EventTarget: addEventListener() method
+ 
+ ClassList Object
+ * The classlist object provides methods to 
+ manipulate an element's classes dynamically. -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling </title>
+ </head>
+ <body>
+    <!-- <button onclick="showData()">Save</button> -->
+
+    <!-- <button>Save</button><br/> -->
+
+    <input type="password" placeholder="Enter the password"/>
+    <button>Show</button>
+ </body>
+ <script>
+
+    //  let btn=document.querySelector("button")
+    //  btn.addEventListener("click",()=>{
+    //     alert("hello")
+    //  })
+
+    // function showData(){
+    //     alert("hello")
+    // } old version
+
+    let btn1=document.querySelector("button")
+    let inputEle=document.querySelector("input")
+    btn1.addEventListener("click",()=>{
+        if(btn1.innerHTML=="Show"){
+        inputEle.type="text"
+        btn1.innerHTML="Hide"
+        }
+        else{
+             inputEle.type="password"
+             btn1.innerHTML="Show"
+        }
+    })
+ </script>
+ </html>

@@ -20,8 +20,8 @@
  <body>
     <button id="css">CSS</button>
     <button id="addClass">Add Class</button>
-    <button>Remove Class</button>
-    <button>Toggle Class</button>
+    <button id="removeClass">Remove Class</button>
+    <button id="toggleClass">Toggle Class</button>
 
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ut unde illo modi facilis tempora nemo 
@@ -42,6 +42,18 @@
      btn1.addEventListener("click",()=>{
         // alert("hello")
          paraEle.classList.add('activePara')
+     })
+
+     let btn2=document.querySelector("#removeClass")
+     btn2.addEventListener("click",()=>{
+        
+         paraEle.classList.remove('activePara')
+     })
+
+     let btn3=document.querySelector("#toggleClass")
+     btn3.addEventListener("click",()=>{
+        
+         paraEle.classList.toggle('activePara')
      })
  </script>
  </html>

@@ -19,7 +19,12 @@ export default {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      colors:{
+        ws: '#2699fb', // extend colors 
+        iip: '#ccc'
+      }
+    },
   },
   plugins: [],
 }

@@ -23,6 +23,9 @@ export default {
       colors:{
         ws: '#2699fb', // extend colors 
         iip: '#ccc'
+      },
+      boxShadow:{
+        'myshadow': '0px 0px 20px 2px red',
       }
     },
   },

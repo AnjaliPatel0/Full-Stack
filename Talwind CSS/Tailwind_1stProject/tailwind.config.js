@@ -26,6 +26,15 @@ export default {
       },
       boxShadow:{
         'myshadow': '0px 0px 20px 2px red',
+      },
+      keyframes:{
+        routeDiv:{
+          '0%': { transform: 'rotate(0deg'},
+          '100%':{ transform: ' rotate(360deg'},
+        }
+      },
+      animation:{
+        routeDiv:{}
       }
     },
   },

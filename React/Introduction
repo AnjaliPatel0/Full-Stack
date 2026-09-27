@@ -1,0 +1,21 @@
+ REACT 
+
+ 1. React is JS Library
+ 2. A JS library for building user interface
+ 3. So this is used to single page application
+ 4. Create user interfaces from components
+ 5. virtual DOM update only required list
+
+ 6. npm init -y create package.json then add type : Module in json
+
+ 7. using node filename for run
+
+ 8. nodemon filename -> automatic run when code is change
+
+ 9. npx nodemon index.js
+
+ 10. for creating new project command: npx create-react-app projectname 
+
+ 11. npm start command is used to run the project
+
+ 12. code . in command prompt to open file direct in VS

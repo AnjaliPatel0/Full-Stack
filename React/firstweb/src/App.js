@@ -4,14 +4,21 @@ import './App.css';
 function App() {
   let name="Wscubetech";
   let l=[10,20,30,40];
+  let status=true;
   return (
-    <div className="App">
+    <div className="main">
         <h1>{name} </h1>
         {l.map((v)=>{
            return(
             <div>{v}</div>
            )
         })}
+
+        <div> {10+20}</div>
+        { (status) ? 
+         <h1 style={{color:"red"}}>Welcome to WS</h1>: ""
+        }
+        
       {/* <h1> Welcome to Jungle </h1> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

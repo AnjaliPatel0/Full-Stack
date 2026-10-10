@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Header} from './Header';
 import  Footer from './Footer';
+import {Button,Card,Container,Row,Col} from 'react-bootstrap';
 
 function App() {
   // let name="Wscubetech";
@@ -11,14 +12,83 @@ function App() {
     <div className="main">
       {/* Call header */}
       <Header/>
-      <div className='row'>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+      <div className='container'>
+          <h1 className='text-danger'> Welcome to Home page</h1>
       </div>
+     
+      <Container fluid>
+        <Container>
+          <Row>
+            <Col className='col-12 text-center py-4'>
+               <h1> Our Courses</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg="3" md="6">
+              <Card style={{ width: '18rem' }}>
+                    
+                    <Card.Body>
+                      <Card.Title>Course1</Card.Title>
+                      <Card.Text>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                  </Card>
+            </Col>
+            <Col lg="3" md="6">
+                <Card style={{ width: '18rem' }}>
+                    
+                    <Card.Body>
+                      <Card.Title>Course1</Card.Title>
+                      <Card.Text>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                  </Card>
+            </Col>
+            <Col lg="3" md="6">
+                 <Card style={{ width: '18rem' }}>
+                    
+                    <Card.Body>
+                      <Card.Title>Course1</Card.Title>
+                      <Card.Text>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                  </Card>
+            </Col>
+            <Col lg="3" md="6">
+                 <Card style={{ width: '18rem' }}>
+                    
+                    <Card.Body>
+                      <Card.Title>Course1</Card.Title>
+                      <Card.Text>
+                        Some quick example text to build on the card title and make up the
+                        bulk of the card's content.
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                  </Card>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+     
+      {/* <div className='row'>
+       
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+      </div> */}
       
       <Footer/>
 
@@ -58,8 +128,8 @@ function App() {
 
 export default App;
 
-function Card(){
-  return(
-    <div className='carditems'>card Div</div>
-  )
-}
+// function Card(){
+//   return(
+//     <div className='carditems'>card Div</div>
+//   )
+// }

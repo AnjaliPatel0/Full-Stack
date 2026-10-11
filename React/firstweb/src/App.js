@@ -11,7 +11,9 @@ function App() {
    return (
     <div className="main">
       {/* Call header */}
-      <Header/>
+      <Header email="Wscube@gmail.com">
+        <h1>Welcome to Header section</h1> {/* children*/ }
+      </Header>
       <div className='container'>
           <h1 className='text-danger'> Welcome to Home page</h1>
       </div>

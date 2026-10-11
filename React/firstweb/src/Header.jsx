@@ -1,9 +1,11 @@
 import React from 'react'
 
- function Header(){
+ function Header(props){
+    // console.log(props.email)
     return(
         <div>
-            <h1>Welcome to header section</h1>
+            {props.children}
+            <h1> {props.email} </h1>
             <div>hello jungle </div>
         </div>
     )

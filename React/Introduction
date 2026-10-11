@@ -19,3 +19,16 @@
  11. npm start command is used to run the project
 
  12. code . in command prompt to open file direct in VS
+
+ 13. font awesome react
+ npm i --save @fortawesome/fontawesome-svg-core
+
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+npm i --save @fortawesome/free-brands-svg-icons
+
+npm i --save @fortawesome/react-fontawesome@latest
+
+14. Tailwind CSS v3.4.17
+npm install -D tailwindcss@3
+npx tailwindcss init

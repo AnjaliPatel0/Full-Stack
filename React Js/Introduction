@@ -1,0 +1,11 @@
+Library -> used in a particular feature
+   1. GSAP     -> Animation library that is moving animation
+   2. Lenis    -> Smooth Scrolling
+   3. React JS -> UI 
+
+
+Framework -> Everything inbuilt 
+  1. Next JS
+  2. Angular
+
+  npm create vite -> to create project

@@ -45,7 +45,7 @@ const App = () => {
       location: "Los Gatos, USA"
     },
     {
-      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png",
+      brandLogo: "https://tse1.mm.bing.net/th/id/OIP.SKseoFKXigablwDM3UjV0wHaHa?r=0&pid=Api&h=220&P=0",
       companyName: "Google",
       datePosted: "1 week ago",
       post: "Cloud Solutions Architect",
@@ -65,7 +65,7 @@ const App = () => {
       location: "Redmond, USA"
     },
     {
-      brandLogo: "https://blog.logomaster.ai/hs-fs/hubfs/ibm-logo-1967.jpg?width=672&height=454&name=ibm-logo-1967.jpg",
+      brandLogo: "https://tse2.mm.bing.net/th/id/OIP._RjA6ol1VZgEkfYjgrSgJQHaEw?r=0&pid=Api&h=220&P=0",
       companyName: "IBM",
       datePosted: "2 days ago",
       post: "AI Research Engineer",

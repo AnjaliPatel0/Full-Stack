@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from './components/Card';
 
+// tailwind css
+// lorem picsum 
+// axios
 const App = () => {
 
   const [userData, setUserData] = useState([]);
